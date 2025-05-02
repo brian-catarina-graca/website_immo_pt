@@ -1,0 +1,27 @@
+/* Reset global */
+html {
+    font-size: 16px; /* Valeur par défaut */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d6e1e6;
+    
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #003366; 
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+}
+  

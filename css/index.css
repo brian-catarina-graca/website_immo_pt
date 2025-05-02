@@ -1,0 +1,147 @@
+/* Conteneur de la section du carrousel */
+#carousel-section {
+    position: relative;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);  /* Ombre semi-transparente */
+    z-index: 1;  /* L'overlay est derrière le titre et le sous-titre, mais devant le carrousel */
+}
+
+/* Carrousel */
+.carousel {
+    position: relative;
+    width: 100%;  /* Le carrousel prend toute la largeur de son conteneur parent */
+    height: 90.15vh;  /* Hauteur du carrousel en pourcentage de la hauteur de la fenêtre (viewport) */
+    overflow: hidden;  /* Cache les parties des images qui débordent */
+}
+
+/* Conteneur des images du carrousel */
+.carousel-images {
+    display: flex;  /* Aligne les images horizontalement */
+    width: 100%;  /* Le conteneur prend toute la largeur du carrousel */
+    height: 100%;  /* La hauteur du conteneur prend toute la hauteur du carrousel */
+    transition: transform 0.5s ease-in-out;  /* Transition fluide lors du changement d'image */
+}
+
+/* Styles pour chaque image du carrousel */
+.carousel-image {
+    flex-shrink: 0;  /* Empêche les images de se rétrécir */
+    width: 100%;  /* Les images occupent toute la largeur du carrousel */
+    height: 100%;  /* Les images occupent toute la hauteur du carrousel */
+    object-fit: cover;  /* Garde l'aspect sans distorsion */
+}
+
+/* Boutons de navigation du carrousel */
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4); /* Fond semi-transparent */
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 10;  /* Les boutons sont au-dessus de l'overlay */
+    transition: background-color 0.3s;
+}
+
+/* Positionnement des boutons à gauche et à droite */
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+/* Effet au survol des boutons */
+.carousel-prev:hover,
+.carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Plus visible au survol */
+}
+
+/* Titres (comme h1 et h3) */
+.banner h1, .banner h3 {
+    text-align: center;
+    position: absolute;
+    font-family: 'Playfair Display', serif;
+    z-index: 2;  /* Les titres sont au-dessus de l'overlay */
+    color: #d3d7d9;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+.banner h1 {
+    font-size: 4rem; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner h3 {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-image-wrapper {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .image-caption {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    border-radius: 4px;
+    z-index: 10;
+  }
+  
+
+/* Conteneur du carrousel fin */
+
+/* Conteneur du presentation */
+.presentation h2 {
+    font-size: 2rem; 
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+.presentation {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+

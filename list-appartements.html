@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="list_title">Location Appartements</title>
+  
+  <!-- CSS de la page -->
+  <link rel="stylesheet" href="css/shared.css" />
+  <link rel="stylesheet" href="css/list-appartements.css" />
+  <!-- CSS de la navbar et footer -->
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+
+<body>
+  <!-- 🔼 Chargement dynamique de la navbar -->
+  <div id="navbar-container"></div>
+
+ <!-- Section d'introduction des appartements -->
+<section id="appartements-intro">
+    <h2 data-i18n="list_title"></h2>
+    <p data-i18n="list_description"></p>
+  </section>
+  
+  <!-- Section des appartements -->
+  <section id="appartements-list">
+    <!-- Appartement 1 -->
+    <div class="appartement" id="apartment1">
+      <img src="images/appartement1.png" alt="Appartement de Quarteira" />
+      <h3 data-i18n="apartment1_title"></h3>
+      <p data-i18n="apartment1_desc"></p>
+      <p data-i18n="apartment1_location"></p>
+    </div>
+  
+    <!-- Appartement 2 -->
+    <div class="appartement" id="apartment2">
+      <img src="images/appartement2.png" alt="Appartement de Vilamoura" />
+      <h3 data-i18n="apartment2_title"></h3>
+      <p data-i18n="apartment2_desc"></p>
+      <p data-i18n="apartment2_location"></p>
+    </div>
+  
+    <!-- Appartement 3 -->
+    <div class="appartement" id="apartment3">
+      <img src="images/appartement3.png" alt="Appartement d'Olhao" />
+      <h3 data-i18n="apartment3_title"></h3>
+      <p data-i18n="apartment3_desc"></p>
+      <p data-i18n="apartment3_location"></p>
+    </div>
+  </section>
+  
+
+  <!-- 🔽 Chargement dynamique du footer -->
+  <div id="footer-container"></div>
+
+  <!-- Fichiers JavaScript -->
+  <script src="js/list-appartements.js"></script>
+  <script src="js/translation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

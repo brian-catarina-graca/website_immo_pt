@@ -1,0 +1,44 @@
+/* css/footer.css */
+.footer {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../images/fade.png');
+    background-size: cover; 
+    background-position: center; 
+    color: #ffff;
+  }
+
+  .footer p {
+    color: white;
+  }  
+
+  .footer-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li::after {
+    content: "|";
+    margin-left: 1rem;
+    color: white;
+  }
+  
+  .footer-links li:last-child::after {
+    content: "";
+  }
+
+  .footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: #cccccc;
+  }
+  

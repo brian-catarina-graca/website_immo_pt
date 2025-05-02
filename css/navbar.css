@@ -1,0 +1,29 @@
+.navbar {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../images/fade.png');
+    background-size: cover; 
+    background-position: center; 
+    color: #ffff;
+}
+  
+.logo {
+    height: 40px;
+}
+  
+  .navbar-right a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    }
+
+  .navbar-right a:hover {
+     color: #cccccc;
+}
+    
+  #languageSwitcher {
+    padding: 0.3rem 0.6rem;
+  }
