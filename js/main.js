@@ -1,3 +1,41 @@
+document.addEventListener("DOMContentLoaded", () => {
+    // Chargement dynamique de la navbar
+    fetch('/templates/navbar.html')
+      .then(res => {
+          if (!res.ok) {
+              console.error('Erreur de chargement de navbar.html');
+          } else {
+              console.log('Navbar chargée');
+          }
+          return res.text();
+      })
+      .then(html => {
+          document.getElementById('navbar-container').innerHTML = html;
+          setupLanguageSwitcher();
+          applyTranslations(localStorage.getItem('lang') || 'en');
+      });
+
+    // Chargement dynamique du footer
+    fetch('/templates/footer.html')
+      .then(res => {
+          if (!res.ok) {
+              console.error('Erreur de chargement de footer.html');
+          } else {
+              console.log('Footer chargé');
+          }
+          return res.text();
+      })
+      .then(html => {
+          document.getElementById('footer-container').innerHTML = html;
+          applyTranslations(localStorage.getItem('lang') || 'en');
+      });
+});
+
+// Autres fonctions déjà présentes dans ton fichier main.js...
+
+
+
+
 /* Language */
 document.addEventListener("DOMContentLoaded", () => {
     // Navbar
