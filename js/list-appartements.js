@@ -48,7 +48,7 @@ function applyTranslations(lang = 'fr') {
   // Charger la navbar et le footer, puis configurer les traductions
   document.addEventListener("DOMContentLoaded", () => {
     // Charger la navbar
-    fetch('/templates/navbar.html')
+    fetch('./templates/navbar.html')
       .then(res => res.text())
       .then(html => {
         document.getElementById('navbar-container').innerHTML = html;
@@ -57,7 +57,7 @@ function applyTranslations(lang = 'fr') {
       });
   
     // Charger le footer
-    fetch('/templates/footer.html')
+    fetch('./templates/footer.html')
       .then(res => res.text())
       .then(html => {
         document.getElementById('footer-container').innerHTML = html;
