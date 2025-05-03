@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Chargement dynamique de la navbar
-    fetch('/templates/navbar.html')
+    fetch('./templates/navbar.html')
       .then(res => {
           if (!res.ok) {
               console.error('Erreur de chargement de navbar.html');
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
     // Chargement dynamique du footer
-    fetch('/templates/footer.html')
+    fetch('./templates/footer.html')
       .then(res => {
           if (!res.ok) {
               console.error('Erreur de chargement de footer.html');
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 /* Language */
 document.addEventListener("DOMContentLoaded", () => {
     // Navbar
-    fetch('/templates/navbar.html')
+    fetch('./templates/navbar.html')
       .then(res => res.text())
       .then(html => {
         document.getElementById('navbar-container').innerHTML = html;
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   
     // Footer
-    fetch('/templates/footer.html')
+    fetch('./templates/footer.html')
       .then(res => res.text())
       .then(html => {
         document.getElementById('footer-container').innerHTML = html;
